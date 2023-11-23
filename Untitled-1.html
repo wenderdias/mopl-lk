@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            height: 30vh;
+        }
+
+        .container {
+            display: flex;
+            height: 100%; /* Ocupa toda a altura da tela */
+        }
+
+        .text-container {
+            flex: 1;
+            padding: 30px;
+            position: relative; /* Adicionado para permitir a posição absoluta do fundo */
+        }
+
+        .text-container h2 {
+            color: #333;
+        }
+
+        .background-container {
+            width: 30%; /* Ajuste a largura conforme necessário */
+            height: 100%; /* Ocupa toda a altura da tela */
+            background-color: #c0c0c0;
+        }
+
+        /* Responsive styles for smaller screens */
+        @media (max-width: 700px) {
+            .container {
+                flex-direction: column; /* Empilha os elementos verticalmente em telas menores */
+            }
+
+            .background-container {
+                width: 100%; /* Ocupa toda a largura em telas menores */
+                height: 100px; /* Ajuste a altura conforme necessário */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="text-container">
+            <h2>Story</h2>
+            <p>História Um dispositivo responsivo (modular, altamente ajustável) modelo de página este é um elemento de banner e geralmente é usado como um introdução ou declaração de abertura. você pode personalizar seu estilo, esquema, cor, tamanho, orientação.</p>
+        </div>
+
+        <!-- Adicione o conteúdo que deseja exibir no fundo aqui -->
+        <div class="background-container"></div>
+    </div>
+
+</body>
+</html>
+
